@@ -484,10 +484,12 @@
 
   /* ── BRANDS ── */
   .brands-section {}
-  .brands-grid {
-    display: flex; flex-wrap: wrap;
-    gap: 16px; justify-content: center;
+    .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 16px;
     margin-top: 50px;
+    width: 100%;
   }
   .brand-card {
     background: var(--black-card);
